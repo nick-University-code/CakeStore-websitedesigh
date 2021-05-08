@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>登入頁面</title>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel=stylesheet type="text/css" href="login.css"> 
+            <script>
+        function refresh_code(){ 
+            document.getElementById("imgcode").src="vercode.php"; 
+        } 
+    </script>
+    </head>
+    <body>
+        
+  <form action="login.php" method="post" style="font-size:16 px; line-height:200%; ">
+  
+  <input type="text" name="account" placeholder="account"  maxlength="30" size="15">
+        <br>   
+  <input type="password" name="password" placeholder="password"  maxlength="30" size="15" >
+     <br>          
+ <input type="text" name="checkvercode" size="10" maxlength="10" style="vertical-align:middle">&nbsp;&nbsp;<img src="vercode.php" onclick="refresh_code()" style="vertical-align:middle">    
+             
+ <br>  
+<input type="submit" name="submit" value="提交">
+<input type="reset" value="清除">
+<input type ="button" onclick="javascript:location.href='index.php'" value="回到首頁">
+          </form>     
+      
+  
+    </body>
+</html>
+
+

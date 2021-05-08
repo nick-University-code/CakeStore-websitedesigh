@@ -1,0 +1,50 @@
+
+<html>
+    <head>
+        <title>註冊系統</title>
+           <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    </head>
+    <body>
+        
+        <form action="signup.php" method="post" style="font-size:16px; line-height:150%;">
+            帳號   : <br>
+                <input type="text" name="account" required/>
+            <br>
+            密碼   : <br>
+                <input type="password" name="password" required/>
+            <br>
+            再次輸入密碼   : <br>
+                <input type="password" name="check" required/>
+            <br>
+            姓名 : <br>
+                <input type="text" name="name" required/>
+            <br>    
+            性別 : <br>
+                    <input type="radio" value=M name="gender">男
+                    <input type="radio" value=F name="gender">女
+                    <input type="radio" value=X name="gender">其他
+            <br>
+             生日 : <br>
+                <input type="date" name="birthday" required/>
+              <br>
+             信箱 : <br>
+               <input type="text" name="email" required/>
+               <br>    
+             地址 : <br>
+               <input type="text" name="address" required/>
+               <br>
+               
+             電話 : <br>
+               <input type="text" name="phone" required/>
+               <br>
+               
+  <input type="submit" value="提交">
+  <input type="reset" value="清除">
+  <input type ="button" onclick="javascript:location.href='index.php'" value="首頁">
+  
+        </form>
+    </body>
+</html>
+
